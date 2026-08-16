@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    min-height: 100vh;
+}
+
+/* Main Card */
+.login-container {
+    width: 380px;
+    max-width: 90%;
+    margin: 70px auto;
+    padding: 35px;
+    background: #ffe4ec;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(200, 100, 130, 0.2);
+}
+
+/* Heading */
+.login-container h1 {
+    text-align: center;
+    color: #d85b82;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #b84d70;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+    display: block;
+    color: #9f4565;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+/* Inputs */
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #f2a9bd;
+    border-radius: 10px;
+    background: #fff8fa;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #df7899;
+    box-shadow: 0 0 5px rgba(223, 120, 153, 0.3);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: #e889a7;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d96f91;
+}
+
+/* Links */
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: #8f5268;
+}
+
+a {
+    color: #d4587e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard */
+.dashboard {
+    min-height: 100vh;
+    background: #fff0f5;
+}
+
+.dashboard-header {
+    background: #f4a6bd;
+    padding: 22px;
+    text-align: center;
+    color: white;
+}
+
+.dashboard-header h1 {
+    font-size: 30px;
+}
+
+.dashboard-content {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.dashboard-content h2 {
+    color: #c65378;
+    margin-bottom: 15px;
+}
+
+.dashboard-card {
+    background: #ffe4ec;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(200, 100, 130, 0.15);
+}
+
+.logout-btn {
+    width: 180px;
+    margin-top: 20px;
+    background: #e889a7;
+}

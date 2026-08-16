@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MahaMart Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <div class="dashboard-header">
+            <h1>MahaMart</h1>
+            <p id="roleTitle"></p>
+        </div>
+
+        <div class="dashboard-content">
+
+            <div class="dashboard-card">
+                <h2 id="welcomeMessage"></h2>
+
+                <p>Login Successful!</p>
+
+                <button class="logout-btn"
+                    onclick="logout()">
+                    Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const role = localStorage.getItem("loginRole");
+
+        const roleTitle = document.getElementById("roleTitle");
+        const welcomeMessage = document.getElementById("welcomeMessage");
+
+        if (role === "buyer") {
+            roleTitle.innerText = "Buyer Dashboard";
+            welcomeMessage.innerText = "Welcome Buyer! 🛍️";
+        }
+
+        else if (role === "seller") {
+            roleTitle.innerText = "Seller Dashboard";
+            welcomeMessage.innerText = "Welcome Seller! 🏪";
+        }
+
+        else if (role === "admin") {
+            roleTitle.innerText = "Admin Dashboard";
+            welcomeMessage.innerText = "Welcome Admin! 👑";
+        }
+
+        else {
+            window.location.href = "login.html";
+        }
+
+        function logout() {
+            localStorage.removeItem("loginRole");
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
